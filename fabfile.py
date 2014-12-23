@@ -51,7 +51,7 @@ def debian():
     local('git describe --tag > lwp/version')
     # the debian changelog is not stored on GIT and rebuilt each time
     generate_debian_changelog()
-    local('dpkg-buildpackage -us -uc -b')
+    local('sudo dpkg-buildpackage -us -uc -b')
 
     # dpkgb-buildpackage places debs one folder above
     version = get_version_from_debian_changelog()
