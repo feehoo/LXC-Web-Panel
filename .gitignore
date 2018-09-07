@@ -23,6 +23,8 @@ build
 # Pycharm conf
 .idea/
 
+.editorconfig/
+
 # bower
 jsbuild/node_modules/*
 jsbuild/bower_components/*
